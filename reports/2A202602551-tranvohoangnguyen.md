@@ -19,6 +19,20 @@
 | Task 9: Retrieval Pipeline | Hợp nhất toàn bộ luồng tìm kiếm trong hàm `retrieve`; dùng điểm Cosine gốc của Dense search để so sánh với ngưỡng fallback; đảm bảo RRF chỉ chạy duy nhất 1 lần. | `src/task9_retrieval_pipeline.py` | Done |
 | Calibration Threshold | Viết script chạy thử các câu hỏi du lịch thực tế (in-domain) và câu hỏi ngoài lề (out-of-domain) để tìm ra ngưỡng `SCORE_THRESHOLD = 0.40` đưa vào cấu hình `.env`. | `scratch/calibrate_threshold.py`, `.env` | Done |
 
+**Bảng thực nghiệm hiệu chuẩn ngưỡng (`SCORE_THRESHOLD = 0.40`):**
+| Câu truy vấn (Query) | Thể loại | Dense Top-1 | Fallback? | Kết quả trả về |
+|---|---|:---:|:---:|---|
+| *Quy định buôn bán hàng rong vỉa hè tại khu phố cổ Hội An?* | In-domain | **0.79** | ❌ Không | `hybrid` |
+| *Khu vực bảo vệ I của di sản thế giới Đô thị cổ Hội An?* | In-domain | **0.82** | ❌ Không | `hybrid` |
+| *Hoạt động bị cấm tại khu bảo tồn biển Cù Lao Chàm?* | In-domain | **0.76** | ❌ Không | `hybrid` |
+| *Giá vé tham quan các điểm di tích trong phố cổ Hội An?* | In-domain | **0.78** | ❌ Không | `hybrid` |
+| *Đặc sản Hội An và địa chỉ ăn mì Quảng ngon ở Đà Nẵng?* | In-domain | **0.74** | ❌ Không | `hybrid` |
+| *Lịch trình du lịch Đà Nẵng 3 ngày 2 đêm gợi ý?* | In-domain | **0.71** | ❌ Không | `hybrid` |
+| *Cách sửa lỗi máy giặt inverter không cấp nước khi giặt?* | Out-of-domain | **0.16** |  Có | `pageindex` / Refusal |
+| *Công thức giải phương trình vi phân tuyến tính bậc hai?* | Out-of-domain | **0.08** |  Có | `pageindex` / Refusal |
+| *Cài đặt driver card đồ họa NVIDIA trên Ubuntu 22.04?* | Out-of-domain | **0.12** |  Có | `pageindex` / Refusal |
+| *Cách làm bánh pizza Margherita hương vị truyền thống Ý?* | Out-of-domain | **0.14** |  Có | `pageindex` / Refusal |
+
 ---
 
 ## Quyết định kỹ thuật quan trọng

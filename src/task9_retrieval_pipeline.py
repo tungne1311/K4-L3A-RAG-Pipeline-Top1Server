@@ -28,9 +28,10 @@ load_dotenv()
 
 _env_thresh = os.getenv("SCORE_THRESHOLD")
 try:
-    SCORE_THRESHOLD = float(_env_thresh) if _env_thresh else 0.3
+    SCORE_THRESHOLD = float(_env_thresh) if _env_thresh else 0.40
 except ValueError:
-    SCORE_THRESHOLD = 0.3
+    SCORE_THRESHOLD = 0.40
+
 
 DEFAULT_TOP_K = 5
 

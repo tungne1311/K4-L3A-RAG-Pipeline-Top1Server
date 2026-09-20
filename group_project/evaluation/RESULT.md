@@ -11,8 +11,8 @@
 | Embedding model                    | TODO  |
 | Corpus version/commit              | TODO  |
 | Golden dataset size                | TODO  |
-| `top_k`                            | TODO  |
-| Fallback threshold and calibration | TODO  |
+| Fallback threshold and calibration | 0.40 (Hiệu chuẩn thực nghiệm Dense Cosine score trên 10 query in-domain Hội An - Đà Nẵng và 8 query out-of-domain) |
+
 
 ## Configurations
 
