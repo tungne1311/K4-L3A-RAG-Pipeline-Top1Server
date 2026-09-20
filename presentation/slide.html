@@ -1,0 +1,84 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Trợ Lý Du Lịch Đà Nẵng - Hội An</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/4.3.1/reset.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/4.3.1/reveal.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/4.3.1/theme/sky.min.css">
+    <style>
+        .reveal h1, .reveal h2, .reveal h3 { font-family: "Segoe UI", sans-serif; text-transform: none; color: #1e3c72; font-weight: bold; }
+        .reveal .slides { text-align: left; }
+        .center-slide { text-align: center; }
+        .metric-table { width: 100%; border-collapse: collapse; font-size: 0.7em; }
+        .metric-table th { background: #1e3c72; color: white; padding: 10px; }
+        .metric-table td { border: 1px solid #ccc; padding: 10px; }
+    </style>
+</head>
+<body>
+    <div class="reveal">
+        <div class="slides">
+            <section class="center-slide" data-background-gradient="linear-gradient(to bottom, #283c86, #45a247)">
+                <h1 style="color: white; font-size: 2.5em;">🏖️ Trợ Lý Du Lịch<br>Đà Nẵng - Hội An</h1>
+                <h3 style="color: #eee;">Hệ thống RAG Chống Ảo Giác</h3>
+                <p style="color: white; margin-top: 50px;">Nhóm: Top1Server<br>Thành viên: R1, R2, R3, Ninh Quang Minh (R4)</p>
+            </section>
+            
+            <section>
+                <h2>1. Đặt Vấn Đề</h2>
+                <ul>
+                    <li class="fragment">Khách du lịch bị "ngợp" thông tin phân mảnh.</li>
+                    <li class="fragment">Quy định bãi biển, phố cổ thường xuyên thay đổi.</li>
+                    <li class="fragment">LLM thông thường dễ bịa đặt (hallucinate) thông tin.</li>
+                    <li class="fragment" style="color: #e74c3c;"><b>Giải pháp:</b> RAG dựa trên 100% Cẩm nang & Quy chế chính thống.</li>
+                </ul>
+            </section>
+
+            <section>
+                <h2>2. Pipeline Kỹ Thuật (R1-R3)</h2>
+                <ul>
+                    <li><b>Data:</b> PDF (Pháp lý) + JSON (Crawl web).</li>
+                    <li><b>Chunking:</b> RecursiveCharacterTextSplitter.</li>
+                    <li><b>Embedding:</b> BAAI/bge-m3 (ChromaDB).</li>
+                    <li><b>Hybrid Search:</b> Dense Search + BM25 Lexical.</li>
+                    <li><b>Fusion & Fallback:</b> Reciprocal Rank Fusion (RRF) & PageIndex.</li>
+                </ul>
+            </section>
+
+            <section>
+                <h2>3. Chatbot UI & Safety (R4)</h2>
+                <ul>
+                    <li><b>Mô hình:</b> GPT-4o-mini với prompt nghiêm ngặt.</li>
+                    <li><b>UI:</b> Streamlit nâng cấp (Glassmorphism & Expanders).</li>
+                    <li><b>Trích dẫn:</b> Mỗi dòng thông tin đều gắn source [1], [2].</li>
+                    <li><b style="color: #e74c3c;">Safe Refusal:</b> "Tôi không thể xác minh thông tin này..." nếu hỏi ngoài lề (VD: Thời tiết Paris).</li>
+                </ul>
+            </section>
+
+            <section>
+                <h2>4. Đánh Giá A/B (RAGAS)</h2>
+                <table class="metric-table">
+                    <tr>
+                        <th>Metric (Tập 15 Q&A)</th>
+                        <th>Config A (Dense-only)</th>
+                        <th>Config B (Dense+BM25+RRF)</th>
+                    </tr>
+                    <tr><td>Faithfulness</td><td>Đang cập nhật...</td><td>Đang cập nhật...</td></tr>
+                    <tr><td>Answer Relevance</td><td>Đang cập nhật...</td><td>Đang cập nhật...</td></tr>
+                    <tr><td>Context Recall</td><td>Đang cập nhật...</td><td>Đang cập nhật...</td></tr>
+                    <tr><td>Context Precision</td><td>Đang cập nhật...</td><td>Đang cập nhật...</td></tr>
+                </table>
+                <p style="font-size: 0.6em; margin-top: 15px;">*Số liệu sẽ được tự động điền khi R1-R3 hoàn thiện kho dữ liệu.</p>
+            </section>
+
+            <section class="center-slide">
+                <h2>Live Demo</h2>
+                <p>Mời Giảng Viên & Các Bạn Trải Nghiệm</p>
+                <img src="https://cdn-icons-png.flaticon.com/512/3284/3284614.png" width="200">
+            </section>
+        </div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/4.3.1/reveal.js"></script>
+    <script>Reveal.initialize({ hash: true, slideNumber: "c/t", transition: "fade" });</script>
+</body>
+</html>

@@ -1,0 +1,77 @@
+[
+  {
+    "question": "Buôn bán hàng rong trên vỉa hè phố cổ Hội An có bị cấm không?",
+    "expected_answer": "Có, việc buôn bán hàng rong trên vỉa hè phố cổ Hội An bị cấm để bảo vệ cảnh quan và trật tự đô thị.",
+    "expected_context": "Cấm kinh doanh buôn bán hàng rong trên các tuyến đường thuộc khu vực phố cổ."
+  },
+  {
+    "question": "Cấm xe máy ở Hội An vào những khung giờ nào?",
+    "expected_answer": "Phố cổ Hội An cấm xe gắn máy vào các khung giờ: 9h-11h và 15h-21h30 hàng ngày.",
+    "expected_context": "Thời gian cấm phương tiện giao thông xe cơ giới lưu thông: Từ 09h00 đến 11h00 và từ 15h00 đến 21h30."
+  },
+  {
+    "question": "Quy định về tắm biển tại Đà Nẵng sau 19h là gì?",
+    "expected_answer": "Không được tắm biển sau 19h00.",
+    "expected_context": "Không tắm biển sau 19h00. Luôn mặc áo phao khi tham gia các hoạt động."
+  },
+  {
+    "question": "Lễ hội pháo hoa quốc tế Đà Nẵng DIFF diễn ra khi nào?",
+    "expected_answer": "Lễ hội pháo hoa quốc tế Đà Nẵng (DIFF) thường diễn ra vào mùa hè, thường kéo dài từ tháng 6 đến tháng 7.",
+    "expected_context": "Lễ hội pháo hoa quốc tế Đà Nẵng DIFF diễn ra vào mùa hè."
+  },
+  {
+    "question": "Thời điểm lý tưởng nhất trong năm để du lịch Đà Nẵng?",
+    "expected_answer": "Thời điểm lý tưởng nhất là từ tháng 2 đến tháng 8.",
+    "expected_context": "Thời điểm lý tưởng nhất trong năm để du lịch Đà Nẵng là mùa khô, từ tháng 2 đến tháng 8."
+  },
+  {
+    "question": "Quy định điều kiện lặn biển tại Cù Lao Chàm?",
+    "expected_answer": "Khách lặn biển phải tuân thủ hướng dẫn an toàn, mặc áo phao và không được phá hoại rạn san hô.",
+    "expected_context": "Du khách lặn biển tại Cù Lao Chàm tuyệt đối không bẻ san hô, tuân thủ hướng dẫn an toàn."
+  },
+  {
+    "question": "Di tích cấp tỉnh tại Quảng Nam được quản lý như thế nào?",
+    "expected_answer": "Di tích cấp tỉnh được quản lý theo quy chế bảo vệ di tích của UBND tỉnh Quảng Nam.",
+    "expected_context": "UBND tỉnh Quảng Nam ban hành quy chế quản lý bảo vệ di tích cấp tỉnh."
+  },
+  {
+    "question": "Lịch trình du lịch Đà Nẵng - Hội An 3 ngày 2 đêm?",
+    "expected_answer": "Lịch trình phổ biến: Ngày 1 tham quan Đà Nẵng, Ngày 2 đi Bà Nà Hills, Ngày 3 tham quan Hội An.",
+    "expected_context": "Gợi ý lịch trình 3 ngày 2 đêm: Đà Nẵng - Bà Nà - Hội An."
+  },
+  {
+    "question": "Quyết định 123/QĐ-UBND về du lịch Hội An ban hành năm nào?",
+    "expected_answer": "Ban hành năm 2026.",
+    "expected_context": "Quyết định 123/QĐ-UBND năm 2026."
+  },
+  {
+    "question": "Ban quản lý bán đảo Sơn Trà và các bãi biển du lịch Đà Nẵng nằm ở đâu?",
+    "expected_answer": "Ban quản lý nằm tại đường Hoàng Sa, quận Sơn Trà, thành phố Đà Nẵng.",
+    "expected_context": "Địa chỉ Ban quản lý: đường Hoàng Sa, quận Sơn Trà."
+  },
+  {
+    "question": "Quy chế bảo vệ di sản thế giới phố cổ Hội An",
+    "expected_answer": "Quy chế này quy định các biện pháp bảo tồn, tôn tạo và phát huy giá trị di sản văn hóa thế giới Đô thị cổ Hội An.",
+    "expected_context": "Quy chế quản lý, bảo vệ Di sản văn hóa thế giới Khu phố cổ Hội An."
+  },
+  {
+    "question": "Chi phí tham gia tour Cù Lao Chàm?",
+    "expected_answer": "Giá tour thường dao động từ 500.000 đến 800.000 VNĐ tùy theo dịch vụ.",
+    "expected_context": "Chi phí tham quan Cù Lao Chàm dao động 500k-800k."
+  },
+  {
+    "question": "Làm sao để sửa máy lạnh inverter bị chảy nước?",
+    "expected_answer": "Tôi không thể xác minh thông tin này từ nguồn hiện có.",
+    "expected_context": ""
+  },
+  {
+    "question": "Cần chuẩn bị gì khi đi du lịch cả Đà Nẵng và Hội An trong mùa mưa?",
+    "expected_answer": "Nên mang theo áo mưa, ô dù, giày chống nước và cập nhật tình hình thời tiết thường xuyên.",
+    "expected_context": "Vào mùa mưa, du khách cần mang theo áo mưa, ô dù và giày đi mưa."
+  },
+  {
+    "question": "Hội An có thu phí tham quan khu phố cổ không và giá bao nhiêu?",
+    "expected_answer": "Hội An có thu phí tham quan. Giá vé thường là 80.000 VNĐ đối với khách trong nước.",
+    "expected_context": "Giá vé tham quan khu phố cổ Hội An là 80.000 VNĐ/người."
+  }
+]

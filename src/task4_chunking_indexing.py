@@ -18,6 +18,14 @@ BATCH_SIZE = 100
 @lru_cache(maxsize=1)
 def _embedding_model():
     """Nạp model một lần để indexing và query dùng chung model."""
+    import os
+    from dotenv import load_dotenv
+    load_dotenv()
+    
+    provider = os.getenv("EMBEDDING_PROVIDER", "sentence_transformers").lower()
+    if provider != "sentence_transformers":
+        raise ValueError(f"Chỉ hỗ trợ sentence_transformers, config yêu cầu: {provider}")
+        
     from sentence_transformers import SentenceTransformer
     return SentenceTransformer(EMBEDDING_MODEL)
 
